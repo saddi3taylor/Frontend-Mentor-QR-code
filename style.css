@@ -94,16 +94,17 @@ img {
 }
 
 @media (max-width: 1350px) {
+
+     body {
+        overflow: visible;
+    }
+    
     .circles {
         display: none;
     }
 }
 
 @media (max-width: 375px) {
-
-    body {
-        overflow: visible;
-    }
 
     .container {
         padding: 0 25px;
