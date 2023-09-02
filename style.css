@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 530px;
+    width: 320px;
+    margin: 100px auto;
+    position: relative;
+    border-radius: 20px;
+    background-color:hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 20px;
+}
+
+.text {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    margin-top: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 0 20px 0;
+}
+
+.subtext {
+    color: hsl(220, 15%, 55%);
+    font-size: 1.1rem;
+    margin: 20px 25px 0;
+}
+
+img {
+    width: 320px;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.circles {
+    background-color: #2c7efa;
+    width: 944px;
+    height: 800px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.top-circle {
+    position: absolute;
+    bottom: 588px;
+    left: -314px;   
+}
+
+.bottom-circle {
+    position: absolute;
+    top: 588px;
+    right: -260px;
+}
+
+@media (max-width: 1510px) {
+    .circles {
+        width: 844px;
+        height: 700px;
+    }  
+}
+
+@media (max-width: 1350px) {
+    .circles {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+
+    body {
+        overflow: visible;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+  
+    .box {
+        height: 505px;
+        width: 90%;
+    }
+  
+    .text {
+        top: 333px;
+        padding: 0 20px;
+    }
+
+    .bold-text {
+        font-weight: bold;
+        font-size: 1.48rem;
+        margin: 0 10px 0;
+    }
+
+    .subtext {
+        font-size: 1em;
+        margin: 20px 12px 0;
+    }
+  
+    img {
+      width: 80%;
+      top: 120px;
+      left: 190px;
+    }
+}
